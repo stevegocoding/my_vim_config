@@ -9,7 +9,12 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My plugins
+Bundle 'fholgado/minibufexpl.vim'
 Bundle 'tpope/vim-fugitive'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'noahfrederick/Hemisu'
+Bundle 'dantler/vim-alternate'
+" Bundle 'vim-scripts/ctags.vim'
 
 filetype plugin indent on
 
@@ -19,6 +24,12 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sets how many lines of history VIM has to remember
 set history=700
+
+" Syntax highlight
+syntax on
+
+" Show line numbers
+set number
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -49,8 +60,10 @@ set wrap "Wrap lines
 " Enable syntax highlighting
 syntax enable
 
-"colorscheme desert
-"set background=dark
+set background=dark
+
+colorscheme solarized
+" colorscheme hemisu
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -75,4 +88,17 @@ set ffs=unix,dos,mac
 set nobackup
 set nowb
 set noswapfile
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => C/C++ Format
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set cindent
+set cinoptions+=g0
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => CTAGS
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set tags+=tags;~,TAGS;~
+
+
 
