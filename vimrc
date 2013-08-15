@@ -100,5 +100,10 @@ set cinoptions+=g0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set tags+=tags;~,TAGS;~
 
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => USEFUL MAPPINGS
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Insert new lines BEFORE and AFTER current line without entering insert mode
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
 
