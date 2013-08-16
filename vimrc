@@ -14,7 +14,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'noahfrederick/Hemisu'
 Bundle 'dantler/vim-alternate'
-" Bundle 'vim-scripts/ctags.vim'
+Bundle 'vim-scripts/taglist.vim'
 
 filetype plugin indent on
 
@@ -98,6 +98,7 @@ set cinoptions+=g0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => CTAGS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Search tags file up to HOME
 set tags+=tags;~,TAGS;~
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
